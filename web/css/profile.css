@@ -1,0 +1,126 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20.10.2016, 19:27:42
+    Author     : COMar-PC
+*/
+
+.top {
+    background-color: #fff;
+    /*background-image: url(../resources/images/top.jpg);*/
+    background-image: url(http://stat.yummyanime.com/img/top.jpg);
+    background-position: top center;
+    background-repeat: no-repeat; 
+    height: 91px; 
+    position: relative;
+    padding: 25px 0 0 0;
+}
+
+#top-block {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+}
+
+.register, .profile-block {
+    background: #3cce7b;
+}
+
+.profile-block {
+    float: right;
+    position: relative;
+    z-index: 2;
+}
+
+.profile-block li {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+.profile-block li:after {
+    content: '';
+    background: #e5e5e5;
+    width: 1px;
+    height: 49px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.profile-block li:last-child:after {
+    display: none;
+}
+
+.profile-block a {
+    color: #fff;
+    padding: 4px 30px;
+    position: relative;
+    font-weight: 400;
+    transition: .5s;
+    height: 49px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.profile-block a:hover {
+    background-color: #3bc175;
+}
+
+.profile-block .logout {
+    padding: 21px 20px 0 20px;
+    font-size: 24px;
+}
+
+.profile-block .logout .fa {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.profile-block .user-name {
+    font-size: 18px;
+}
+
+.small-text {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 300;
+}
+
+@media(max-width: 1024px) {
+    .top {
+        height: auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    #top-block {
+        height: 91px;
+        position: static;
+    }
+
+    .top .profile-block,
+    .top .auth-block {
+        float: none;
+        display: inline-block;
+    }
+
+    .top > .container {
+        background: #333;
+        padding: 10px;
+        text-align: center;
+    }
+}

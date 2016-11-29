@@ -15,9 +15,22 @@ public class Internalization_ru_RU extends ListResourceBundle {
 
     @Override
     protected Object[][] getContents() {
-        return new Object[][] {
+        return new Object[][]{
             // {"", ""},
-            {"ShopCOMpany", "МКИ"}
+            {"ShopCOMpany", "МКИ"},
+            {"My profile", "профиль"},
+            {"My login", "Мой логин"}, // TODO DEBUG
+            {"Exit", "выйти"},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""}
         };
     }
 

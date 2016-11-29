@@ -17,7 +17,21 @@ public class Internalization_en extends ListResourceBundle {
     protected Object[][] getContents() {
         return new Object[][] {
             // {"", ""},
-            {"ShopCOMpany", "SHC"}
+            {"ShopCOMpany", "SHC"},
+            {"My profile", "profile"},
+            {"My login", "My login"}, // TODO DEBUG
+            {"Exit", "exit"},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""}            
         };
     }
 

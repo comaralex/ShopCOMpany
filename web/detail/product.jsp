@@ -9,11 +9,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8" />
         <title>${lang.tr("ShopCOMpany")}: ${prod.getMovieName()}</title>
+        <link href="<c:url value='/css/style.css'/>" rel="stylesheet" type="text/css" />
+        <link href="<c:url value='/css/product.css'/>" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <%@ include file="/WEB-INF/includes/profile.jspf" %>
+        <header><%@ include file="/WEB-INF/includes/header.jspf" %></header>
+        <h2>Hello World!</h2>
         <script>
             window.defaultPage = ${defaultPage};
         </script>

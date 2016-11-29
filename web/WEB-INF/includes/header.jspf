@@ -1,0 +1,16 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<div class="container clearfix">
+    <a class="logo" href="/"></a>
+    <ul class="menu">
+        <li><a href="http://yummyanime.com">Главная</a></li>
+        <li><a href="http://yummyanime.com/posts">Новости</a></li>
+        <li><a href="http://yummyanime.com/catalog">Каталог <span>аниме</span></a></li>
+        <li><a href="http://yummyanime.com/top">ТОП-100 <span>аниме</span></a></li>
+        <li><a href="http://yummyanime.com/random">Случайное <span>аниме</span></a></li>
+        <li><a href="http://yummyanime.com/ongoing">Онгоинги</a></li>
+        <li><a href="http://yummyanime.com/channel">Видео <span>блоггеров</span></a></li>
+        <li><a href="http://yummyanime.com/page/faq">FAQ</a></li>
+        <li><a href="http://yummyanime.com/rules">Правила <span>сайта</span></a></li>
+    </ul>
+</div>

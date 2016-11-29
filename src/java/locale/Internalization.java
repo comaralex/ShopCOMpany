@@ -17,7 +17,21 @@ public class Internalization extends ListResourceBundle {
     protected Object[][] getContents() {
         return new Object[][] {
             // {"", ""},
-            {"ShopCOMpany", "SHC"}
+            {"ShopCOMpany", "SHC"},
+            {"My profile", "profile"},
+            {"My login", "My login"},
+            {"Exit", "exit"},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""},
+            {"", ""}            
         };
     }
 

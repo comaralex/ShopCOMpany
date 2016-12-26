@@ -12,14 +12,17 @@
         <meta charset="UTF-8" />
         <title>${lang.tr("ShopCOMpany")}: ${prod.getMovieName()}</title>
         <link href="<c:url value='/css/style.css'/>" rel="stylesheet" type="text/css" />
-        <link href="<c:url value='/css/product.css'/>" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <%@ include file="/WEB-INF/includes/profile.jspf" %>
-        <header><%@ include file="/WEB-INF/includes/header.jspf" %></header>
-        <h2>Hello World!</h2>
-        <script>
-            window.defaultPage = ${defaultPage};
-        </script>
+        <%@ include file="/WEB-INF/includes/header.jspf" %>
+        <div class="content-block container clearfix">
+            <form action="" method="get" class="search-block">
+                <input class="search" name="word" type="text"
+                       placeholder="${lang.tr("Find a movie by title")}" value="">
+                <input type="submit" class="search-submit" value="">
+            </form>
+            <%@ include file="/WEB-INF/includes/product.jspf" %>
+        </div>
     </body>
 </html>

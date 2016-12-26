@@ -47,22 +47,24 @@ public class ServletProduct extends HttpServlet {
                 + " the town of Pasloe, he finds in his wagon a Pagan wolf-deity"
                 + " named Holo who is over 600 years old. She takes the form of"
                 + " a 15-year-old girl, except for a wolf's tail and ears.";
+        String movieShort = "Spice and Wolf's story revolves around Kraft Lawrence"
+                + "and a Pagan wolf-deity named Holo.";
         String movieAuthor = "Ayakura";
         ArrayList<String> movieGenre = new ArrayList<String>();
         movieGenre.add("Fantazy");
         movieGenre.add("Gods");
+        movieGenre.add("Wolfes");
         String movieType = "TV Series";
         Integer movieSeries = 12;
         String movieVoice = "Ancord";
-        Movie movie = new Movie(movieName, movieDesc, movieAuthor,
+        Movie movie = new Movie(movieName, movieShort, movieDesc, movieAuthor,
                 movieGenre, movieType, movieSeries, movieVoice);
 
         request.setAttribute("prod", movie);
-        request.setAttribute("defaultPage", config.getInitParameter("defaultPage"));
+        request.setAttribute("defaultTab", config.getInitParameter("defaultTab"));
         
         LangBundle lang = (LangBundle) session.getAttribute("lang");
         String language = (String) request.getParameter("lang");
-        language =  "ru"; // TODO Delete it
         if (language != null) {
             lang = new LangBundle(new Locale(language));
             session.setAttribute("lang", lang);
@@ -73,7 +75,7 @@ public class ServletProduct extends HttpServlet {
             session.setAttribute("lang", lang);
         }
         
-        System.out.println("DEBUG " + lang);
+        System.out.println("DEBUG " + lang.toString());
         System.out.println("DEBUG " + session.getAttribute("lang"));
         this.getServletContext()
                 .getRequestDispatcher("/detail/product.jsp")

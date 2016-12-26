@@ -25,7 +25,8 @@ public class LangBundle {
         return resources.getString(string);
     }
     
+    @Override
     public String toString() {
-        return resources.getBaseBundleName();
+        return resources.getLocale().toString();
     }
 }

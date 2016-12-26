@@ -16,6 +16,7 @@ public class Movie implements java.io.Serializable {
     private Integer movieId;
     private String movieName;
     private String movieDesc;
+    private String movieShortDesc;
     private String movieAuthor;
     private ArrayList<String> movieGenre;
     private String movieType;
@@ -27,6 +28,7 @@ public class Movie implements java.io.Serializable {
     }
     
     public Movie(String movieName,
+            String movieShort,
             String movieDesc,
             String movieAuthor,
             ArrayList<String> movieGenre,
@@ -34,6 +36,7 @@ public class Movie implements java.io.Serializable {
             Integer movieSeries,
             String movieVoice) {
         this.movieName = movieName;
+        this.movieShortDesc = movieShort;
         this.movieDesc = movieDesc;
         this.movieAuthor = movieAuthor;
         this.movieGenre = movieGenre;
@@ -52,6 +55,10 @@ public class Movie implements java.io.Serializable {
 
     public void setMovieDesc(String movieDesc) {
         this.movieDesc = movieDesc;
+    }
+
+    public void setMovieShortDesc(String movieShortDesc) {
+        this.movieShortDesc = movieShortDesc;
     }
 
     public void setMovieAuthor(String movieAuthor) {
@@ -84,6 +91,10 @@ public class Movie implements java.io.Serializable {
 
     public String getMovieDesc() {
         return movieDesc;
+    }
+
+    public String getMovieShortDesc() {
+        return movieShortDesc;
     }
 
     public String getMovieAuthor() {

@@ -13,7 +13,6 @@ and open the template in the editor.
     padding: 0;
     border: none;
     outline: none;
-    /*-moz-box-sizing: border-box;*/
     box-sizing: border-box;
 }
 
@@ -31,23 +30,12 @@ body {
     position: relative;
 }
 
-/*ul, menu, dir {
-    display: block;
-    list-style-type: disc;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 40px;
-}*/
-
 ul li {
     list-style-type: none;
 }
 
 li {
     display: list-item;
-    /*text-align: -webkit-match-parent;*/
 }
 
 a {
@@ -90,78 +78,65 @@ h3 {
     visibility: hidden;
 }
 
+.small-text {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 300;
+    text-transform: lowercase;
+}
 
+.content-block {
+    margin-bottom: 20px;
+}
 
+.search-block {
+    position: relative;
+    margin-bottom: 10px;
+}
 
 input[type="text"], input[type="password"], select {
     width: 100%;
     padding: 7px 10px;
-    border: 1px solid #a9a9a9
+    border: 1px solid #a9a9a9;
 }
 
-table select {
-    width: auto;
-}
-
-
-
-.header {
-    background: #333;
-    border-top: 3px solid #ff6666;
-    border-bottom: 3px solid #ff6666;
-    margin-bottom: 20px;
-}
-
-.header .container {
-    padding-left: 250px;
-}
-
-.logo {
-    display: block;
-    position: absolute;
-    background: url(http://stat.yummyanime.com/img/new-logo3.png) no-repeat;
-    width: 243px;
-    height: 85px;
-    top: -10px;
-    left: 0;
-
-    /*width: 274px;*/
-    /*height: 91px;*/
-    /*top: -10px;*/
-    /*left: -24px;*/
-}
-
-.menu {
-    float: right;
-}
-
-.menu li {
-    float: left;
-}
-
-.menu a {
-    font-weight: 300;
-    font-size: 15px;
-    display: block;
+input[type="submit"], .submit {
+    background: #3cce7b;
     color: #fff;
-    text-transform: uppercase;
-    padding: 22px 20px;
-    position: relative;
-    transition: background .4s;
+    font-size: 14px;
+    padding: 7px 15px;
+    margin-bottom: 0;
+    cursor: pointer;
+    display: inline-block;
 }
 
-.menu a span {
-    display: block;
-    font-size: 12px;
-    text-transform: none;
-    text-align: center;
+input[type="submit"].search-submit {
+    background: url(../resources/images/sprites.png) -25px -24px no-repeat;
+    width: 24px;
+    height: 24px;
     position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 10px;
+    right: 10px;
+    top: 11px;
+    cursor: pointer;
 }
 
-.menu a:hover,
-.menu a.active {
-    background: #ff6666;
+input.search {
+    border: 1px solid #acadad;
+    padding: 15px 20px;
+    background: #fff;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 14px;
+    transition: .3s;
+}
+
+@media (max-width: 1024px) {
+    .content-block {
+        overflow: hidden;
+    }
+    
+    input.search {
+        padding: 15px 110px 15px 20px;
+    }
 }

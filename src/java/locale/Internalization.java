@@ -15,24 +15,29 @@ public class Internalization extends ListResourceBundle {
 
     @Override
     protected Object[][] getContents() {
-        return new Object[][] {
+        return new Object[][]{
             // {"", ""},
             {"ShopCOMpany", "SHC"},
-            {"My profile", "profile"},
+            {"My profile", "Profile"},
             {"My login", "My login"},
-            {"Exit", "exit"},
+            {"Login", "Login"},
+            {"Logout", "Logout"},
+            {"To main", "To main"},
+            {"Catalog", "Catalog of"},
+            {"Anime", "Anime"},
+            {"Choose the language", "Choose the language"},
+            {"Language", "Language"},
+            {"Find a movie by title", "Find a movie by title"},
+            {"Author", "Author"},
+            {"Genre", "Genre"},
+            {"Type", "Type"},
+            {"Series", "Number of series"},
+            {"Voice", "Voice"},
+            {"Short description", "Short description"},
+            {"Full description", "Full description"},
+            {"Review", "Review"},
             {"", ""},
-            {"", ""},
-            {"", ""},
-            {"", ""},
-            {"", ""},
-            {"", ""},
-            {"", ""},
-            {"", ""},
-            {"", ""},
-            {"", ""},
-            {"", ""}            
+            {"", ""}
         };
     }
-
 }

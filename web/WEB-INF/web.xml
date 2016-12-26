@@ -4,8 +4,8 @@
         <servlet-name>ServletProduct</servlet-name>
         <servlet-class>servlets.ServletProduct </servlet-class>
         <init-param>
-            <param-name>defaultPage</param-name>
-            <param-value>1</param-value>
+            <param-name>defaultTab</param-name>
+            <param-value>2</param-value>
         </init-param>
     </servlet>
     <servlet-mapping>

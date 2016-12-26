@@ -4,6 +4,106 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 20.10.2016, 18:41:32
+    Created on : 21.10.2016, 5:04:59
     Author     : COMar-PC
 */
+
+.content {
+    width: 75%;
+    float: left;
+    position: relative;
+    background: #fff;
+    padding: 15px;
+    word-wrap: break-word;
+}
+
+.content-img {
+    float: right;
+    position: relative;
+    margin: 10px 20px 20px 20px;
+    max-width: 245px;
+    z-index: 2;
+}
+
+.content-info,
+.content-desc,
+.content-review {
+    border-top: 1px solid #dfdfdf;
+    padding: 10px 0;
+    line-height: 26px;
+}
+
+.content-desc {
+    float: left;
+}
+
+.content-info li span {
+    font-weight: 600;
+    float: left;
+    margin-right: 5px;
+}
+
+.genre {
+    float: left;
+    margin-right: 5px;
+}
+
+.genre-list a:hover {
+    text-decoration: underline;
+}
+
+.genre-list li {
+    display: inline-block;
+}
+
+.genre-list li:after {
+    content: ', ';
+}
+
+.genre-list li:last-child:after {
+    content: '.';
+}
+
+.tabs {
+    clear: both;
+    background: #333;
+    color: #fff;
+    border-bottom: 3px solid #ff6666;
+}
+
+.tabs li {
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 13px 25px;
+}
+
+.tabs li.active {
+    background: #ff6666;
+}
+
+.tabs li.active:hover,
+.tabs li.not-active:hover,
+.tabs li:hover {
+    background: hsla(0, 100%, 70%, 0.83);
+}
+
+.tabs-content {
+    margin-top: 10px;
+}
+
+.tab-content,
+.tab-content.not-active {
+    display: none;
+}
+
+.tab-content:first-child,
+.tab-content.active {
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .content {
+        width: 100%;
+    }
+}

@@ -5,7 +5,7 @@
         <servlet-class>servlets.ServletProduct </servlet-class>
         <init-param>
             <param-name>defaultTab</param-name>
-            <param-value>2</param-value>
+            <param-value>1</param-value>
         </init-param>
     </servlet>
     <servlet-mapping>

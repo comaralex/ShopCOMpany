@@ -81,16 +81,13 @@ and open the template in the editor.
 }
 
 .profile-block .logout > .log-in {
+    background: url(../resources/images/sprites.png) 0px -47px no-repeat;
+    width: 18px;
+    height: 20px;
     position: absolute;
-    top: 6px;
-    left: 0;
-    width: 100%;
+    top: 4px;
+    left: 20px;
     text-align: center;
-}
-
-.profile-block .logout .log-in:before {
-    background: url(../resources/images/sprites.png) -25px -24px no-repeat;
-    content: "\f08b";
 }
 
 .profile-block .user-name {

@@ -24,6 +24,10 @@ function changeDesc(desc) {
 function clickDefaultTabs(defaultTab) {
     var tabs = document.querySelectorAll('.tabs');
     for (var i = 0; i < tabs.length; i++) {
-        tabs[i].children[defaultTab].click();
+        if (defaultTab < tabs[i].children.length && defaultTab >= 0) {
+            tabs[i].children[defaultTab].click();
+        } else {
+            tabs[i].children[0].click();
+        }
     }
 }

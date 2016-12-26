@@ -14,7 +14,7 @@
             </li>
             <li title="${lang.tr("Logout")}">
                 <a class="logout" href="">
-                    <i class="log-in" href=""></i>
+                    <span class="log-in" href=""></span>
                     <span class="small-text">${lang.tr("Logout")}</span>
                 </a>
             </li>

@@ -36,7 +36,7 @@ public class Internalization extends ListResourceBundle {
             {"Short description", "Short description"},
             {"Full description", "Full description"},
             {"Review", "Review"},
-            {"", ""},
+            {"Catalog", "Catalog"},
             {"", ""}
         };
     }

@@ -36,7 +36,7 @@ public class Internalization_de extends ListResourceBundle {
             {"Short description", "Kurzbeschreibung"},
             {"Full description", "Vollständige Beschreibung"},
             {"Review", "Überprüfung"},
-            {"", ""},
+            {"Catalog", "Catalog"},
             {"", ""},
             {"", ""},
             {"", ""},

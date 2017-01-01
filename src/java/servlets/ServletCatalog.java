@@ -5,8 +5,8 @@
  */
 package servlets;
 
-import database.DataBaseDebug;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Locale;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -21,7 +21,7 @@ import shop.Movie;
  *
  * @author COMar-PC
  */
-public class ServletProduct extends HttpServlet {
+public class ServletCatalog extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -38,9 +38,29 @@ public class ServletProduct extends HttpServlet {
         ServletConfig config = this.getServletConfig();
         HttpSession session = request.getSession();
 
-        DataBaseDebug dbDebug = DataBaseDebug.getInstance();
-        Movie movie = DataBaseDebug.getArrayOfMovies().get(0);
-        
+        String movieName = "Spice and Wolf";
+        System.out.println(movieName);
+        String movieDesc = "Spice and Wolf's story revolves around Kraft Lawrence,"
+                + " a 25-year-old traveling merchant who peddles various goods"
+                + " from town to town to make a living in a stylized historical"
+                + " setting with European influences. One night when stopped at"
+                + " the town of Pasloe, he finds in his wagon a Pagan wolf-deity"
+                + " named Holo who is over 600 years old. She takes the form of"
+                + " a 15-year-old girl, except for a wolf's tail and ears.";
+        String movieShort = "Spice and Wolf's story revolves around Kraft Lawrence"
+                + "and a Pagan wolf-deity named Holo.";
+        String movieAuthor = "Ayakura";
+        ArrayList<String> movieGenre = new ArrayList<String>();
+        movieGenre.add("Fantazy");
+        movieGenre.add("Gods");
+        movieGenre.add("Wolfes");
+        String movieType = "TV Series";
+        Integer movieSeries = 12;
+        String movieVoice = "Ancord";
+        String movieURL = "spice_and_wolf";
+        Movie movie = new Movie(movieName, movieShort, movieDesc, movieAuthor,
+                movieGenre, movieType, movieSeries, movieVoice, movieURL);
+
         request.setAttribute("prod", movie);
         request.setAttribute("defaultTab", config.getInitParameter("defaultTab"));
         

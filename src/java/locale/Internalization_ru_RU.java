@@ -36,7 +36,7 @@ public class Internalization_ru_RU extends ListResourceBundle {
             {"Short description", "Краткое"},
             {"Full description", "Полное описание"},
             {"Review", "Отзывы"},
-            {"", ""},
+            {"Catalog", "Каталог"},
             {"", ""},
             {"", ""},
             {"", ""},

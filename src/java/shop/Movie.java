@@ -12,7 +12,8 @@ import java.util.ArrayList;
  * @author COMar-PC
  */
 public class Movie implements java.io.Serializable {
-
+    private static int nextId = 0;
+    
     private Integer movieId;
     private String movieName;
     private String movieDesc;
@@ -22,7 +23,8 @@ public class Movie implements java.io.Serializable {
     private String movieType;
     private Integer movieSeries;
     private String movieVoice;
-
+    private String movieURL;
+    
     public Movie() {
 
     }
@@ -34,7 +36,8 @@ public class Movie implements java.io.Serializable {
             ArrayList<String> movieGenre,
             String movieType,
             Integer movieSeries,
-            String movieVoice) {
+            String movieVoice,
+            String movieURL) {
         this.movieName = movieName;
         this.movieShortDesc = movieShort;
         this.movieDesc = movieDesc;
@@ -43,12 +46,17 @@ public class Movie implements java.io.Serializable {
         this.movieType = movieType;
         this.movieSeries = movieSeries;
         this.movieVoice = movieVoice;
+        this.movieURL = movieURL;
+        
+        this.movieId = createId();
     }
 
-    public void setMovieId(Integer movieId) {
-        this.movieId = movieId;
+    private Integer createId() {
+        nextId++;
+        
+        return nextId;
     }
-
+    
     public void setMovieName(String movieName) {
         this.movieName = movieName;
     }
@@ -115,5 +123,13 @@ public class Movie implements java.io.Serializable {
 
     public String getMovieVoice() {
         return movieVoice;
+    }
+
+    public String getMovieURL() {
+        return movieURL;
+    }
+
+    public void setMovieURL(String movieURL) {
+        this.movieURL = movieURL;
     }
 }

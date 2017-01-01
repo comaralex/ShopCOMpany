@@ -1,13 +1,11 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import="shop.Movie" %>
 
 <link href="<c:url value='/css/product.css'/>" rel="stylesheet" type="text/css" />
 <script src="js/tabs.js" type="text/javascript" /></script>
-<% Movie prod = (Movie) request.getAttribute("prod"); %>
 <div class="content">
     <div class="content-img">
-        <img src="/ShopCOMpany-war/resources/images/product/<%out.print(prod.getMovieURL());%>.jpg">
+        <img src="<c:url value='/resources/images/product/spice_and_wolf.jpg' />">
     </div>
     <h1>${prod.getMovieName()}</h1>
     <ul class="content-info">
@@ -24,7 +22,7 @@
         <li><span>${lang.tr("Author")}:</span>${prod.getMovieAuthor()}</li>
         <li><span>${lang.tr("Type")}:</span>${prod.getMovieType()}</li>
         <li><span>${lang.tr("Series")}:</span>${prod.getMovieSeries()}</li>
-        <li><span>${lang.tr("Voice")}:</span>${prod.getMovieVoice()}</li>
+        <li><span>${lang.tr("Voice")}:</span>${prod.getMovieAuthor()}</li>
     </ul>
     <ul class="content-desc">
         <ul class="tabs">
